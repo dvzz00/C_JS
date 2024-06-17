@@ -1,47 +1,30 @@
 <!DOCTYPE html>
-<html lang="Pt-br">
-
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
-    <title>Landing Page</title>
+    <title>Login</title>
+    <link rel="stylesheet" href="/C_JS/css/login.css">
 </head>
-
 <body>
-    <header>
-        <nav class="navigation">
-            <a href="index.html"><strong>Formula E</strong></a>
-            <ul class="nav-menu">
-                <li class="nav-item"><a href="/C_FRONT/arquivos/problema.html">Problema</a></li>
-                <li class="nav-item"><a href="/C_FRONT/arquivos/solucao.html">Solução</a></li>
-                <li class="nav-item"><a href="/C_FRONT/arquivos/impactos.html">Impactos</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section class="home">
-            <div class="home-text">
-                <h4 class="text-h4">FIA World Championship</h4>
-                <h1 class="text-h1">Formula E</h1>
-                <p></p>
-            </div>
-            <div class="home-img">
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAACoCAMAAABt9SM9AAAAkFBMVEX/////HgD/AAD/sq7/FAD/b2f/ZVz/W1H/paH/EAD/oZ3/rqr/kIv/lZD/2tj/v7z/0c//xsP/qqb/OCr/zMr/nJf/7ez/sKz/4d//6ej/RDj/09H/wb7/3Nr/urf/trL/d3D/gnz/VUv/T0T/KRb/PjH/iIL/cGj/9/f/aWH/hoD/MSH/Sj7/fnj/Vk3/XlXA96whAAADuElEQVR4nO3ca3OiMBSHcYmogFVR0eL9fqvafv9vt4pxtzuzs3NCgzln+P9eN5P4DAqFaKUCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOR2HaTtOpp35YlHloBdny+q+G4wJhgU3mnWij/rYV9yss+U1jcZEBYZKopN3nyP0fY8ZVc9W2FMmY3pFhZoNLvdMhb3an1GnbJFNDq3St9sRxe5o+kPV2LSaj5XJKl5PHbi0CnzOx9SdWmYLNfu8ahaQqhryPqhu1JVHq3affSpPrXK0erffasX9DXijPli0anv8DytPveVoVbXeaiAgFZdWDRGtWtlaA7etRh7Xa/Xv1CBHq4XtVrGAT/bb6444tKpKeAt6KuDQqiWjVY9Dq6uMVs0crea2W9VktFpwaFVHKzIRl1ee6mSLjdy2WstoNeXQaiOjVTdHq05JWyUcWl3Qimws4d9BT8U5Wk05tfJfRk1ktvLD54PdbX+8Wa8/G8XbsGi1M2t177S5RvM4LXi3wD9JanU7lPadke0l0Jm16tqevk9v5avtILU9vxExrXy1SWzPbsjo2YD9VmdyK7WL/xo5nEyrUWu/Wh4OtaI1JgxaHcmt/O/PcSfR4axPhuEr6LmltFKX32e+RT3bpWWw7p/S92Qct9pSX7J+RFepjK6v334krZW+XDkuHexoy9XK9pno6BFb+UpfLjRdbP7T96KEtAq3+uPKyY1UYa36x2xA6ru4MaHvr7htNaTuOQ7HjwGJk+fUPFpRT/1q8xiwcHJvUFirz8cAo2091uiTsFmr+D+vu9hWX48BRv++WqNbGW0osN5qRP340d9cQCvKzDWnrbqiWi3FtZo4a/XYYe5oe6mwVqvSt0qps6s9WpFbtZy2SkS1GpS+1YzcKmDQ6s2oVdtZq17pW7XJrfS3ENzsWxbWau60Vcyg1YTcapqjla1tMqGwVl2zVtlPPHjjdd2KBodWMblVYtLqVqoRJda30pi1mlmend5KX63QWqmz/S/vVVy3Sgpp5RfwPcc7Ka30zKRW4e5oeZ0Pblt1ya30o1RSq+fNedvctpqST2upwXKfN+dtk9JqZLDcolrtjVrZ3oPYobYK9QVAiVvNqa18tCK38vSZrcStqI/cw61Rq7rlZWpCWp3R6p3aqq8H0FqdLC9TE9JqpweUuFVA/QHKix6wIv11zfIytSt1tRnbrYYB8ZdNn5vb0x7pzy0v02xyvWK334cBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACQ4RefWm3rbDInmwAAAABJRU5ErkJggg=="
-                    alt="logo">
-            </div>
-        </section>
-    </main>
-
-
-    <footer>
-        <section>
-            <p>&copy; FIA 2013-2024 Todo o conteúdo sujeito à aprovação da FIA</p>
-            <p>Insta: @fiaformulae</p>
-            <p>Email: media@fiaformulae.com</p> 
-        </section>
-    </footer>
+    <script>
+        window.addEventListener("load", function() {
+            alert("Bem-vindo ao nosso site!");
+        });
+    </script>
+    <div class="container">
+        <h2>Login</h2>
+        <form id="login">
+            <label for="username">Nome de Usuário:</label>
+            <input type="text" id="username" name="username" required>
+            
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" required>
+            
+            <button type="submit">Entrar</button>
+            <p id="msg_erro" class="msg_erro"></p>
+        </form>
+    </div>
+    <script src="/C_JS/js/login.js"></script>
 </body>
-
 </html>

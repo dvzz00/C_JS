@@ -42,15 +42,7 @@ body {
     font-size: 17px;
     font-weight: 500;
 }
-footer {
-    background-color: #882626;
-    padding: 1.25rem;
-    width: 100%;
-    text-align: center;
-    color: white;
-    bottom: 0;
-    display: inline-block;
-}
+
 main{
     background-color: rgb(28, 30, 34);
 }
