@@ -94,3 +94,9 @@ main h3{
 main p{
     text-align: justify;
 }
+footer {
+    background-color: #882626;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
